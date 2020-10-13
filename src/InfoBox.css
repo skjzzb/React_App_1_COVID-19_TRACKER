@@ -1,3 +1,11 @@
+@media (max-width: 990px) {
+  .infoBox {
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+
+}
 .infoBox {
     flex: 1;
     cursor: pointer;

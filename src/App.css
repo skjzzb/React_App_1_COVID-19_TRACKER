@@ -60,4 +60,13 @@ body {
   .app__right{
     margin-top: 20px;
   }
+  .app__stats {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .app__dropdown {
+    background-color: white;
+    width: 200px;
+  }
 }
