@@ -1,0 +1,92 @@
+[debug] [2020-10-13T06:31:26.199Z] ----------------------------------------------------------------------
+[debug] [2020-10-13T06:31:26.201Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-10-13T06:31:26.202Z] CLI Version:   8.12.1
+[debug] [2020-10-13T06:31:26.202Z] Platform:      win32
+[debug] [2020-10-13T06:31:26.202Z] Node Version:  v12.14.0
+[debug] [2020-10-13T06:31:26.204Z] Time:          Tue Oct 13 2020 12:01:26 GMT+0530 (India Standard Time)
+[debug] [2020-10-13T06:31:26.204Z] ----------------------------------------------------------------------
+[debug] [2020-10-13T06:31:26.204Z] 
+[debug] [2020-10-13T06:31:26.216Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-13T06:31:26.217Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Clone\covid-tracker
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-10-13T06:34:39.358Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-10-13T06:34:39.359Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-10-13T06:34:39.732Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Tue, 13 Oct 2020 06:34:38 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-13T06:34:39.750Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-10-13T06:34:40.639Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 13 Oct 2020 06:34:39 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  Using project covid19-tracker-266e7 (Covid19 Tracker) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2020-10-13T06:35:15.381Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+ 
+[debug] [2020-10-13T06:35:15.644Z] <<< HTTP RESPONSE 200 {"accept-ranges":"bytes","vary":"Accept-Encoding, Origin","content-type":"application/json","content-length":"1429","date":"Tue, 13 Oct 2020 06:19:34 GMT","expires":"Tue, 13 Oct 2020 07:09:34 GMT","last-modified":"Thu, 08 Oct 2020 20:48:24 GMT","x-content-type-options":"nosniff","server":"sffe","x-xss-protection":"0","cache-control":"public, max-age=3000","age":"940","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""}
+[info] +  Wrote build/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Clone\covid-tracker 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=382545166&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2020-10-13T06:35:38.421Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"29c4d9b68c6f58e581c4","redirect_uri":"http://localhost:9005","state":"382545166"}
+[debug] [2020-10-13T06:35:39.029Z] <<< HTTP RESPONSE 200 {"date":"Tue, 13 Oct 2020 06:35:37 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","server":"GitHub.com","status":"200 OK","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"W/\"06ab1fe5fc0e356e24025ae22e9d4612\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com www.google-analytics.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker.js gist.github.com/socket-worker.js","x-github-request-id":"F2AC:6A2C:723C51:9D8D54:5F854AB9"}
+[debug] [2020-10-13T06:35:39.030Z] >>> HTTP REQUEST GET https://api.github.com/user  
+ 
+[debug] [2020-10-13T06:35:39.487Z] <<< HTTP RESPONSE 200 {"date":"Tue, 13 Oct 2020 06:35:38 GMT","content-type":"application/json; charset=utf-8","content-length":"1388","server":"GitHub.com","status":"200 OK","cache-control":"private, max-age=60, s-maxage=60","vary":"Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"\"5a920fd4ebc4d6a758bd7cfa66b40162157393dfc5dcbaebefcf76b35c8ed7b2\"","last-modified":"Tue, 13 Oct 2020 06:35:36 GMT","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4999","x-ratelimit-reset":"1602574537","x-ratelimit-used":"1","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","x-github-request-id":"F2BB:2B1C:32D7CC:45CB04:5F854AB9"}
+[info] 
+[info] +  Success! Logged into GitHub as skjzzb 
+[info] 
+[debug] [2020-10-13T06:46:17.827Z] >>> HTTP REQUEST GET https://api.github.com/repos/React_App_1_COVID-19_TRACKER/actions/secrets/public-key?type=owner  
+ 
+[debug] [2020-10-13T06:46:18.188Z] <<< HTTP RESPONSE 404 {"date":"Tue, 13 Oct 2020 06:46:16 GMT","content-type":"application/json; charset=utf-8","content-length":"74","server":"GitHub.com","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4998","x-ratelimit-reset":"1602574537","x-ratelimit-used":"2","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"F3AB:2C64:C3711:11316D:5F854D38"}
+[debug] [2020-10-13T06:46:18.189Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2020-10-13T06:46:25.043Z] >>> HTTP REQUEST GET https://api.github.com/repos//actions/secrets/public-key?type=owner  
+ 
+[debug] [2020-10-13T06:46:25.416Z] <<< HTTP RESPONSE 404 {"date":"Tue, 13 Oct 2020 06:46:23 GMT","content-type":"application/json; charset=utf-8","content-length":"74","server":"GitHub.com","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4997","x-ratelimit-reset":"1602574537","x-ratelimit-used":"3","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"F3AC:0D42:C392E:113DBF:5F854D3F"}
+[debug] [2020-10-13T06:46:25.420Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2020-10-13T07:01:58.077Z] >>> HTTP REQUEST GET https://api.github.com/repos//actions/secrets/public-key?type=owner  
+ 
+[debug] [2020-10-13T07:01:58.258Z] >>> HTTP REQUEST GET https://api.github.com/repos//actions/secrets/public-key?type=owner  
+ 
+[debug] [2020-10-13T07:01:58.418Z] >>> HTTP REQUEST GET https://api.github.com/repos//actions/secrets/public-key?type=owner  
+ 
+[debug] [2020-10-13T07:01:58.470Z] <<< HTTP RESPONSE 404 {"date":"Tue, 13 Oct 2020 07:01:56 GMT","content-type":"application/json; charset=utf-8","content-length":"74","server":"GitHub.com","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4994","x-ratelimit-reset":"1602574537","x-ratelimit-used":"6","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"FB36:59AD:31E8B2:44F3FD:5F8550E4"}
+[debug] [2020-10-13T07:01:58.470Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2020-10-13T07:01:58.578Z] >>> HTTP REQUEST GET https://api.github.com/repos//actions/secrets/public-key?type=owner  
+ 
+[debug] [2020-10-13T07:01:58.600Z] <<< HTTP RESPONSE 404 {"date":"Tue, 13 Oct 2020 07:01:57 GMT","content-type":"application/json; charset=utf-8","content-length":"74","server":"GitHub.com","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4993","x-ratelimit-reset":"1602574537","x-ratelimit-used":"7","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"FB37:59AD:31E8B6:44F403:5F8550E4"}
+[debug] [2020-10-13T07:01:58.600Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2020-10-13T07:01:58.777Z] <<< HTTP RESPONSE 404 {"date":"Tue, 13 Oct 2020 07:01:57 GMT","content-type":"application/json; charset=utf-8","content-length":"74","server":"GitHub.com","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4992","x-ratelimit-reset":"1602574537","x-ratelimit-used":"8","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"FB38:59AD:31E8C0:44F40E:5F8550E5"}
+[debug] [2020-10-13T07:01:58.778Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2020-10-13T07:01:58.935Z] <<< HTTP RESPONSE 404 {"date":"Tue, 13 Oct 2020 07:01:57 GMT","content-type":"application/json; charset=utf-8","content-length":"74","server":"GitHub.com","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4991","x-ratelimit-reset":"1602574537","x-ratelimit-used":"9","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"FB39:6DFC:32F204:4617BD:5F8550E5"}
+[debug] [2020-10-13T07:01:58.936Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
