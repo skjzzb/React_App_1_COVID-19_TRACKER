@@ -64,11 +64,12 @@ const buildChartData = (data, casesType) => {
 };
 
 
-function LineGraph({ caseType },...props) {
+function LineGraph({ caseType, ...props }) {
   const [data, setData] = useState({});
 
   useEffect(() => {
     const fetchData = async () => {
+      console.log(props);
       await fetch("https://disease.sh/v3/covid-19/historical/all?lastdays=30")
         .then((response) => response.json())
         .then((data) => {

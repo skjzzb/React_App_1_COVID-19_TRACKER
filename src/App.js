@@ -138,7 +138,7 @@ function App() {
       </div>
       <Card className="app__right">
         <CardContent>
-          <div className="app__information">
+          
           <h3>Live Cases by Country</h3>
           <Table countries={tableData}/>
           {/* Table */}
@@ -146,7 +146,7 @@ function App() {
           <LineGraph className="app__graph" caseType={casesType} />
 
           {/* Graph */}
-          </div>
+       
         </CardContent>
       </Card>
     </div>
